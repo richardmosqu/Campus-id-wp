@@ -1,0 +1,267 @@
+.campuslife-card {
+    max-width: 320px;
+    padding: 20px;
+    border: 2px solid #003087;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #e6f0fa 100%);
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 48, 135, 0.3);
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.card-header h2 {
+    color: #003087;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #003087, #0056b3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.card-body .photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 3px solid #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.card-body p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.card-body p span {
+    display: inline-block;
+    margin-left: 5px;
+    color: #34495e;
+}
+
+.serial-number {
+    color: #007BFF;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+.qrcode {
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+}
+
+.watermark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjA1Ii8+CiAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMjAiIGZpbGw9IiMwMDMwODciIG9wYWNpdHk9IjAuMSIvPgogIDxjaXJjbGUgY3g9IjIwIiBcyT0iMjAiIHI9IjEwIiBmaWxsPSIjMDA1NmIzIiBvcGFjaXR5PSIwLjEiLz4KICA8Y2lyY2xlIGN4PSI4MCIgY3y9IjgwIiByPSIxNSIgZmlsbD0iIzAwN0JGRiIgb3BhY2l0eT0iMC4xIi8+Cjwvc3ZnPg==') repeat;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.campuslife-create-form, .campuslife-edit-form, .campuslife-validate-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #003087;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e6f0fa 100%);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+}
+
+.campuslife-create-form h2, .campuslife-edit-form h2, .campuslife-validate-form label {
+    color: #003087;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.campuslife-create-form div, .campuslife-edit-form div, .campuslife-validate-form div {
+    margin-bottom: 15px;
+}
+
+.campuslife-create-form input, .campuslife-edit-form input, .campuslife-validate-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.campuslife-create-form input[type="submit"], .campuslife-edit-form input[type="submit"], .campuslife-validate-form input[type="submit"] {
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.campuslife-create-form input[type="submit"]:hover, .campuslife-edit-form input[type="submit"]:hover, .campuslife-validate-form input[type="submit"]:hover {
+    background: #003087;
+}
+
+#photo-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.validation-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.validation-result span {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.valid { background-color: #d4edda; color: #155724; }
+.invalid { background-color: #f8d7da; color: #721c24; }
+
+.valid span { color: #28a745; }
+.invalid span { color: #dc3545; }
+
+.validation-container {
+    max-width: 320px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#qr-scanner-container {
+    max-width: 320px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.qr-scan-button {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+    color: #003087;
+    margin-top: 0;
+}
+
+.modal div {
+    margin-bottom: 15px;
+}
+
+.modal input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal button[type="submit"] {
+    background: #0056b3;
+    color: #fff;
+}
+
+.modal .close-modal {
+    background: #dc3545;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .campuslife-card { max-width: 90%; padding: 15px; min-height: 400px; }
+    .card-body .photo { width: 100px; height: 100px; }
+    .card-logo { width: 180px; }
+    .card-header h2 { font-size: 1.5em; }
+    .campuslife-create-form, .campuslife-edit-form, .campuslife-validate-form, .validation-container, #qr-scanner-container { max-width: 90%; padding: 15px; }
+    .qrcode { width: 80px; height: 80px; }
+    #qr-video { max-width: 100%; }
+    .modal { width: 100%; }
+}
